@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Feb  6 14:07:28 2023
+# Process ID: 24408
+# Current directory: E:/ILOVEHIT/THIRD/subjects/computer-architecture/lab2/version2_signle_cycle_cpu/lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12752 E:\ILOVEHIT\THIRD\subjects\computer-architecture\lab2\version2_signle_cycle_cpu\lab_2\lab_2.xpr
+# Log file: E:/ILOVEHIT/THIRD/subjects/computer-architecture/lab2/version2_signle_cycle_cpu/lab_2/vivado.log
+# Journal file: E:/ILOVEHIT/THIRD/subjects/computer-architecture/lab2/version2_signle_cycle_cpu/lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ILOVEHIT/THIRD/subjects/computer-architecture/lab2/version2_signle_cycle_cpu/lab_2/lab_2.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,18 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+F:/my_learning/lab2/lab_2/lab_2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sim_1/new/cpu_tb.v,1662037138,verilog,,,,cpu_tb,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Alu.v,1667827433,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/DataMem.v,,alu,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/DataMem.v,1668517346,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Decoder.v,,data_mem,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Decoder.v,1668506011,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Extender.v,,Decoder,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Extender.v,1667782767,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/InstructionMem.v,,S_EXT16,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/InstructionMem.v,1668517328,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Mux.v,,instr_mem,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Mux.v,1667718175,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/NPC.v,,mux,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/NPC.v,1667718184,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/PC.v,,NPC,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/PC.v,1668510214,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v,,PC,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v,1668512311,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Strcat.v,,regfile,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Strcat.v,1667792610,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v,,Strcat,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v,1668506261,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v,,cpu,,,,,,,,
+F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v,1668498208,verilog,,F:/my_learning/lab2/lab_2/lab_2.srcs/sim_1/new/cpu_tb.v,,cpu_top,,,,,,,,

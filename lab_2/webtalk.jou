@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov 15 16:16:15 2022
+# Process ID: 23324
+# Current directory: F:/my_learning/lab2/lab_2
+# Command line: wbtcv.exe -mode batch -source F:/my_learning/lab2/lab_2/lab_2.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: F:/my_learning/lab2/lab_2/webtalk.log
+# Journal file: F:/my_learning/lab2/lab_2\webtalk.jou
+#-----------------------------------------------------------
+source F:/my_learning/lab2/lab_2/lab_2.hw/webtalk/labtool_webtalk.tcl -notrace

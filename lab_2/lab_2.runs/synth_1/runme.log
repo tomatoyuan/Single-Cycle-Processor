@@ -1,0 +1,577 @@
+
+*** Running vivado
+    with args -log cpu_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source cpu_top.tcl -notrace
+Command: synth_design -top cpu_top -part xc7a200tfbv676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbv676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14300 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 888.891 ; gain = 234.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu_top' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:11]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:12]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:13]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:25]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:26]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:27]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:28]
+INFO: [Synth 8-3876] $readmem data file 'F:/my_learning/lab2/lab_2/lab2.data/cpu_trace' is read successfully [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:34]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:41]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/InstructionMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'F:/my_learning/lab2/lab_2/lab2.data/inst_data.txt' is read successfully [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/InstructionMem.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (1#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/InstructionMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Decoder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (2#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Decoder.v:22]
+INFO: [Synth 8-6157] synthesizing module 'PC' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (4#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Strcat' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Strcat.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Strcat' (5#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Strcat.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v:34]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v:34]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v:39]
+WARNING: [Synth 8-4767] Trying to implement RAM 'array_reg_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "array_reg_reg" dissolved into registers
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (6#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Alu.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Alu.v:31]
+INFO: [Synth 8-6157] synthesizing module 'S_EXT16' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Extender.v:23]
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'S_EXT16' (8#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Extender.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Mux.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux' (9#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'F:/my_learning/lab2/lab_2/lab2.data/data_data.txt' is read successfully [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/DataMem.v:38]
+INFO: [Synth 8-3876] $readmem data file 'F:/my_learning/lab2/lab_2/lab2.data/data_data.txt' is read successfully [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/DataMem.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (10#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'instr_mem'. This will prevent further optimization [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:67]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cpu_s_ext16'. This will prevent further optimization [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:88]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cpu_regfile'. This will prevent further optimization [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:83]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cup_decoder'. This will prevent further optimization [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'scDmem'. This will prevent further optimization [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:96]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux2'. This will prevent further optimization [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (11#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-251]     ----PASS!!! [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:59]
+INFO: [Synth 8-251] Test end! [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:60]
+INFO: [Synth 8-251] ============================================================== [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:61]
+INFO: [Synth 8-251] -------------------------------------------------------------- [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:69]
+INFO: [Synth 8-251] Error!!! [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:70]
+INFO: [Synth 8-251]     Reference : PC = 0xxxxxxxxx, write back reg number = x, write back data = 0xxxxxxxxx [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:71]
+INFO: [Synth 8-251]     Error     : PC = 0xxxxxxxxx, write back reg number = x, write back data = 0xxxxxxxxx [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:72]
+INFO: [Synth 8-251] -------------------------------------------------------------- [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:73]
+INFO: [Synth 8-251] ============================================================== [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:74]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_cpu'. This will prevent further optimization [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_top' (12#1) [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:11]
+WARNING: [Synth 8-3331] design data_mem has unconnected port rst
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[31]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[30]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[29]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[28]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[27]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[26]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[25]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[24]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[23]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[22]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[21]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[20]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[19]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[18]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[17]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[16]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[15]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[14]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[13]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[12]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[11]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[10]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[9]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[8]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[1]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[0]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[25]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[24]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[23]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[22]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[21]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[20]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[11]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Decoder has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design Decoder has unconnected port clk
+WARNING: [Synth 8-3331] design Decoder has unconnected port zero
+WARNING: [Synth 8-3331] design instr_mem has unconnected port clk
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[31]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[30]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[29]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[28]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[27]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[26]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[25]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[24]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[23]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[22]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[21]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[20]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[19]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[18]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[17]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[16]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[15]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[14]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[13]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[12]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[11]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[10]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[9]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[8]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[1]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr[0]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port IM_R
+WARNING: [Synth 8-3331] design instr_mem has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 961.910 ; gain = 307.590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 961.910 ; gain = 307.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 961.910 ; gain = 307.590
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 961.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/my_learning/lab2/lab_2/lab_2.srcs/constrs_1/new/cpu.xdc]
+Finished Parsing XDC File [F:/my_learning/lab2/lab_2/lab_2.srcs/constrs_1/new/cpu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/my_learning/lab2/lab_2/lab_2.srcs/constrs_1/new/cpu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpu_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1060.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1060.777 ; gain = 406.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbv676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1060.777 ; gain = 406.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1060.777 ; gain = 406.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "RAM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "trace_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Alu.v:44]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1060.777 ; gain = 406.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 1     
+	  11 Input     72 Bit        Muxes := 1     
+	  19 Input     32 Bit        Muxes := 1     
+	  33 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cpu_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  11 Input     72 Bit        Muxes := 1     
+Module instr_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  19 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 1     
+	  33 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   9 Input      1 Bit        Muxes := 1     
+Module mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module data_mem 
+Detailed RTL Component Info : 
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design data_mem has unconnected port rst
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[31]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[30]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[29]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[28]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[27]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[26]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[25]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[24]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[23]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[22]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[21]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[20]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[19]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[18]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[17]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[16]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[15]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[14]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[13]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[12]
+WARNING: [Synth 8-3331] design data_mem has unconnected port addr[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[0]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[1]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[2]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[3]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[4]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[5]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[6]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[7]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[8]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[9]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[10]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[11]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[12]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[13]' (FDSE) to 'leds_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'leds_reg_reg[14]' (FDSE) to 'leds_reg_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1060.777 ; gain = 406.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------+------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++-------------+------------+-----------+----------------------+----------------+
+|U_cpu/scDmem | ROM_reg    | Implied   | 64 x 32              | RAM64X1S x 32	 | 
++-------------+------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.777 ; gain = 406.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1060.777 ; gain = 406.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-------------+------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++-------------+------------+-----------+----------------------+----------------+
+|U_cpu/scDmem | ROM_reg    | Implied   | 64 x 32              | RAM64X1S x 32	 | 
++-------------+------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1094.617 ; gain = 440.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v:49]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1109.426 ; gain = 455.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1109.426 ; gain = 455.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1109.426 ; gain = 455.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1109.426 ; gain = 455.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1109.426 ; gain = 455.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1109.426 ; gain = 455.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    47|
+|3     |LUT1     |    23|
+|4     |LUT2     |    25|
+|5     |LUT3     |   196|
+|6     |LUT4     |    93|
+|7     |LUT5     |   158|
+|8     |LUT6     |  1913|
+|9     |MUXF7    |   384|
+|10    |RAM64X1S |    32|
+|11    |FDRE     |  1033|
+|12    |FDSE     |     1|
+|13    |LD       |    32|
+|14    |IBUF     |     2|
+|15    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+----------+------+
+|      |Instance        |Module    |Cells |
++------+----------------+----------+------+
+|1     |top             |          |  3957|
+|2     |  U_cpu         |cpu       |  3872|
+|3     |    instr_mem   |instr_mem |    15|
+|4     |    cup_decoder |Decoder   |    29|
+|5     |    cpu_regfile |regfile   |  3345|
+|6     |    cpu_s_ext16 |S_EXT16   |     1|
+|7     |    mux2        |mux       |    32|
+|8     |    scDmem      |data_mem  |    65|
+|9     |    cpu_alu     |alu       |   246|
+|10    |    cpu_npc     |NPC       |    73|
+|11    |    cpu_pc      |PC        |    33|
++------+----------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1109.426 ; gain = 455.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1109.426 ; gain = 356.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1109.426 ; gain = 455.105
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1109.426 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 495 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cpu_top' is not ideal for floorplanning, since the cellview 'regfile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1109.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1109.426 ; gain = 802.953
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1109.426 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/my_learning/lab2/lab_2/lab_2.runs/synth_1/cpu_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpu_top_utilization_synth.rpt -pb cpu_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 19:56:38 2022...

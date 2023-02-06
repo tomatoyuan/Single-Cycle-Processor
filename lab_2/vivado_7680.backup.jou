@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov 15 16:16:27 2022
+# Process ID: 7680
+# Current directory: F:/my_learning/lab2/lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10660 F:\my_learning\lab2\lab_2\lab_2.xpr
+# Log file: F:/my_learning/lab2/lab_2/vivado.log
+# Journal file: F:/my_learning/lab2/lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/my_learning/lab2/lab_2/lab_2.xpr
+
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {U_cpu/inst[0]} {U_cpu/inst[1]} {U_cpu/inst[2]} {U_cpu/inst[3]} {U_cpu/inst[4]} {U_cpu/inst[5]} {U_cpu/inst[6]} {U_cpu/inst[7]} {U_cpu/inst[8]} {U_cpu/inst[9]} {U_cpu/inst[10]} {U_cpu/inst[11]} {U_cpu/inst[12]} {U_cpu/inst[13]} {U_cpu/inst[14]} {U_cpu/inst[15]} {U_cpu/inst[16]} {U_cpu/inst[17]} {U_cpu/inst[18]} {U_cpu/inst[19]} {U_cpu/inst[20]} {U_cpu/inst[21]} {U_cpu/inst[22]} {U_cpu/inst[23]} {U_cpu/inst[24]} {U_cpu/inst[25]} {U_cpu/inst[26]} {U_cpu/inst[27]} {U_cpu/inst[28]} {U_cpu/inst[29]} {U_cpu/inst[30]} {U_cpu/inst[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {debug_wb_pc[0]} {debug_wb_pc[1]} {debug_wb_pc[2]} {debug_wb_pc[3]} {debug_wb_pc[4]} {debug_wb_pc[5]} {debug_wb_pc[6]} {debug_wb_pc[7]} {debug_wb_pc[8]} {debug_wb_pc[9]} {debug_wb_pc[10]} {debug_wb_pc[11]} {debug_wb_pc[12]} {debug_wb_pc[13]} {debug_wb_pc[14]} {debug_wb_pc[15]} {debug_wb_pc[16]} {debug_wb_pc[17]} {debug_wb_pc[18]} {debug_wb_pc[19]} {debug_wb_pc[20]} {debug_wb_pc[21]} {debug_wb_pc[22]} {debug_wb_pc[23]} {debug_wb_pc[24]} {debug_wb_pc[25]} {debug_wb_pc[26]} {debug_wb_pc[27]} {debug_wb_pc[28]} {debug_wb_pc[29]} {debug_wb_pc[30]} {debug_wb_pc[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {debug_wb_rf_wdata[0]} {debug_wb_rf_wdata[1]} {debug_wb_rf_wdata[2]} {debug_wb_rf_wdata[3]} {debug_wb_rf_wdata[4]} {debug_wb_rf_wdata[5]} {debug_wb_rf_wdata[6]} {debug_wb_rf_wdata[7]} {debug_wb_rf_wdata[8]} {debug_wb_rf_wdata[9]} {debug_wb_rf_wdata[10]} {debug_wb_rf_wdata[11]} {debug_wb_rf_wdata[12]} {debug_wb_rf_wdata[13]} {debug_wb_rf_wdata[14]} {debug_wb_rf_wdata[15]} {debug_wb_rf_wdata[16]} {debug_wb_rf_wdata[17]} {debug_wb_rf_wdata[18]} {debug_wb_rf_wdata[19]} {debug_wb_rf_wdata[20]} {debug_wb_rf_wdata[21]} {debug_wb_rf_wdata[22]} {debug_wb_rf_wdata[23]} {debug_wb_rf_wdata[24]} {debug_wb_rf_wdata[25]} {debug_wb_rf_wdata[26]} {debug_wb_rf_wdata[27]} {debug_wb_rf_wdata[28]} {debug_wb_rf_wdata[29]} {debug_wb_rf_wdata[30]} {debug_wb_rf_wdata[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 5 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {debug_wb_rf_addr[0]} {debug_wb_rf_addr[1]} {debug_wb_rf_addr[2]} {debug_wb_rf_addr[3]} {debug_wb_rf_addr[4]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list debug_wb_rf_wen ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list p_0_in ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {F:/my_learning/lab2/lab_2/lab_2.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a200t_0]
+set_property PROBES.FILE {F:/my_learning/lab2/lab_2/lab_2.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {F:/my_learning/lab2/lab_2/lab_2.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {F:/my_learning/lab2/lab_2/lab_2.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {F:/my_learning/lab2/lab_2/lab_2.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {F:/my_learning/lab2/lab_2/lab_2.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes p_0_in -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {U_cpu/inst} }
+set_property TRIGGER_COMPARE_VALUE eq32'h8C01_0004 [get_hw_probes U_cpu/inst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes U_cpu/inst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes p_0_in -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {F:/my_learning/lab2/lab_2/lab_2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+close_design
+launch_simulation
+source cpu_tb.tcl
+run all
+relaunch_sim

@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_EXT16
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/Strcat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Strcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/my_learning/lab2/lab_2/lab_2.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
